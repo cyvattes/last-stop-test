@@ -90,6 +90,7 @@ var Stops = React.createClass({
         }
         return [date, departure_time];
       }
+
       function timerSwap(date, dep){
           var timeTilChange = (3600000) * 1 // Time in Hours
           if (date.diff(moment()) < timeTilChange && date.diff(moment()) > 0) {
@@ -147,12 +148,9 @@ var Stops = React.createClass({
         );
       })
 
-
       var stops = function(){
         return stopNameViewer;
       }
-
-
 
       return (
       <div className="col-sm-12 col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
